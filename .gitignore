@@ -1,0 +1,61 @@
+# ============================
+# Frontend (React + Vite)
+# ============================
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/*.local
+frontend/coverage/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Editor / OS noise (repo-wide, not just frontend)
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ============================
+# Backend (Spring Boot / Java / Maven / Gradle)
+# ============================
+backend/target/
+backend/build/
+backend/out/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/*.jar
+backend/*.war
+backend/*.class
+
+# Sensitive / environment-specific config — never commit real secrets
+backend/src/main/resources/application.properties
+backend/src/main/resources/application-*.properties
+backend/src/main/resources/application.yml
+backend/src/main/resources/application-*.yml
+
+# Logs
+backend/logs/
+backend/*.log
+backend/spring.log
+
+# Gradle
+backend/.gradle/
+backend/gradle-app.setting
+
+# Maven
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# ============================
+# Env files (either side)
+# ============================
+.env
+.env.local
+.env.*.local

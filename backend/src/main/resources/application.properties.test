@@ -1,0 +1,36 @@
+spring.application.name=SmartShelfX
+
+# Server Configuration
+server.port=8080
+
+# Database Configuration
+spring.datasource.url=${DB_URL}
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+
+# JPA Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.show-sql=true
+
+# Security
+jwt.secret=${JWT_SECRET}
+jwt.expiration=86400000
+
+# Gemini AI
+gemini.api.key=${GEMINI_API_KEY}
+
+# Logging
+logging.level.com.smartshelfx=DEBUG
+logging.level.org.springframework.security=DEBUG
+logging.level.com.smartshelfx.security=DEBUG
+
+# Database initialization
+spring.sql.init.mode=always
+spring.sql.init.platform=postgresql
+spring.jpa.defer-datasource-initialization=true
+
+# Default Admin User (for dev only, override in env)
+spring.security.user.name=${ADMIN_USER:admin}
+spring.security.user.password=${ADMIN_PASSWORD:admin123}
