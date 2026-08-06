@@ -291,8 +291,3 @@ Visit `http://localhost:5173` in your browser and sign in using the [demo creden
 - 📱 QR code generation
 - 🔄 Third-party integrations (Shopify, WooCommerce, etc.)
 
----
-
-## 📄 License
-
-This project currently has no license specified. Add a `LICENSE` file to the repository if you'd like to make usage terms explicit.
